@@ -12,5 +12,5 @@ while True:
     print("Success")
   except KeyboardInterrupt:
     print('Ending')
-  print(X)
+  print("{:d},{:d}".format(X,Y))
   sleep(0.1)
