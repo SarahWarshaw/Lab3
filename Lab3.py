@@ -7,9 +7,10 @@ myJoystick = Joystick(0x48)
 while True:
   try:
     print("test")
-    X = myJoystick.getX
-    Y = myJoystick.getY
+    X = myJoystick.getX()
+    Y = myJoystick.getY()
+    print("Success")
   except KeyboardInterrupt:
     print('Ending')
-  print(int(X))
+  print(X)
   sleep(0.1)
