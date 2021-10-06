@@ -10,6 +10,6 @@ while True:
     Y = myJoystick.getY
   except KeyboardInterrupt:
     print('Ending')
-
-  print("{:d}, {:d}".format(X,Y))
+  for X,Y in zip(X,Y):
+    print('{:3}, {:3}'.format(X,Y))
   sleep(0.1)
