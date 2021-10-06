@@ -10,5 +10,5 @@ while True:
     Y = myJoystick.getY()
   except KeyboardInterrupt:
     print('Ending')
-  print("{:d},{:d}".format(X,Y))
+  print("{:d}, {:d}".format(X.rjust(5),Y.rjust(5)))
   sleep(0.1)
